@@ -10,7 +10,7 @@ jobs:
       - run: sudo apt-get update
       - run: sudo apt-get install libglib2.0-dev libaio-dev
       - run: sudo apt-get install libcurl4-openssl-dev
-      - run: ./configure --prefix=OUT && make install
+      - run: ./configure --prefix=$(pwd)/OUT && make install
       - uses: actions/upload-artifact@v4
         with:
           name: qemu
