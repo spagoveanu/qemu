@@ -8,5 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update
-      - run: sudo apt-get install libglib2.0-dev libcurl4-nss-dev libaio-dev
+      - run: sudo apt-get install libglib2.0-dev libaio-dev
+      - run: sudo apt-get install libcurl-dev
       - run: ./configure
